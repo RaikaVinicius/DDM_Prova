@@ -1,14 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Raika from './SRC/COMPONENTS/RAIKA/main';
-import Vinicius from './SRC/COMPONENTS/VINICIUS';
+import Raika from './SRC/COMPONENTS/RAIKA/main.js';
+import Vinicius from './SRC/COMPONENTS/VINICIUS/index.js';
+
 
 
 export default function App() {
   return (
     <View style={styles.container}>   
-<Vinicius/>
-<Raika/>
+    <Raika/>
+    <Vinicius/>
+    <StatusBar style="auto" />
     </View>
    
   );
